@@ -1,0 +1,156 @@
+
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+Warang+Citi&family=Sofadi+One&display=swap');
+
+/* src/App.css */
+h1 {
+  font-family: 'Sofadi One', cursive;
+  font-size:60px
+}                                                                                   
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Introduction Section */
+.intro-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  padding: 20px;
+}
+
+.intro-text h1 {
+  font-family: 'Sofadi One', cursive;
+  color: #4720a1;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-family: 'Inria Sans', sans-serif;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  border: 2px solid #7d57a7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flip Card Styling */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+/* Front Side */
+.flip-card-front {
+  background: linear-gradient(135deg, #eae8ec 0%, #2575fc 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front .card {
+  background: transparent;
+  border: none;
+}
+
+.flip-card-front .card-title {
+  font-family: 'Sofadi One', cursive;
+  font-size: 1.5rem;
+}
+
+.flip-card-front .card-text {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* Back Side */
+.flip-card-back {
+  background: linear-gradient(135deg, #a347af 0%, #97b4b6 100%);
+  color: #2c3e50;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back .card {
+  background: transparent;
+  border: none;
+}
+
+.flip-card-back .card-title {
+  font-family: 'Sofadi One', cursive;
+  font-size: 1.5rem;
+}
+
+.flip-card-back .card-text {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* Card Hover Effects */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.para{
+  font-size: 23px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flip-card {
+    height: 250px;
+  }
+  
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .intro-text {
+    padding: 10px;
+  }
+}

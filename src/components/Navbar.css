@@ -1,0 +1,13 @@
+.nav{
+  background-color: #20416e;
+  height:80px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.custom-nav-dropdown .dropdown-toggle {
+  color: white !important;
+}
+
+.new{
+  font-size: 30px !important;
+}

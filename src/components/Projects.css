@@ -1,0 +1,53 @@
+/* Projects.css */
+.project-list {
+  margin-top: 50px;
+    display: flex;
+    justify-content: space-around; /* Even spacing between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each card */
+    max-width: 400px; /* Maximum width for each card */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    margin-top: 10px;
+}
+
+.tech {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
